@@ -38,7 +38,7 @@ def Process_Vessel(env, vessel_id, port): #Function to Simulate Vessel
         print(f"Vessel {vessel_id} - is waiting for a berth") #waiting until a berth is available
     yield berth_request  # Wait for berth if not available
     print(f"Vessel {vessel_id} - berthed at Time : {env.now:.4f}")
-    yield env.process(port.operate_crane(vessel_id, 10)) #start operating on the vessel
+    yield env.process(port.operate_crane(vessel_id, 150)) #start operating on the vessel
     print(f"Vessel {vessel_id} - finished unloading and leaves the Port at Time : {env.now:.4f}")
     port.berths.release(berth_request) #releasing the resource for next vessel
 
