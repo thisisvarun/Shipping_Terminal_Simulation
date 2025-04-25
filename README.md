@@ -1,6 +1,5 @@
-# Maersk Case Study:
 ## Introduction
-- The simulation.py file contains Python code for simulating container Terminal operations as part of the Maersk assessment. The simulation models the arrival, unloading, and transportation of containers, managing resources like berths, cranes, and trucks.
+- The simulation.py file contains Python code for simulating container Terminal operations. The simulation models the arrival, unloading, and transportation of containers, managing resources like berths, cranes, and trucks.
 ## Task Description
 The simulation models the following terminal operations:
 ### Arrival of Vessels
